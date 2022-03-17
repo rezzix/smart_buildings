@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+        <script>
+        $(document).ready(function(){
+          $(".control").click(function(){
+            var control = $(this). attr('id');
+            $.ajax({url: "/"+control, success: function(result){
+              $("#results").html(result);
+            }});
+          });
+        });
+        </script>        
+    </head>
+    <body>
+        Welcome home !
+        <a href="#" class="control" id="motor">motor</a>
+        <br/>
+        <a href="#" class="control" id="light">light</a>
+        <br/>
+        <div id="results">
+            
+        </div>
+    </body>
+</html>
