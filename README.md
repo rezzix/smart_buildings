@@ -1,6 +1,9 @@
 # Smart_buildings
 This a a collection of codes to be used for smart things and smart home projects
 
+## Architecture
+![Architecture](http://www.mederp.net/projects/smart_buildings/sb_architecture.png)
+
 ## Flask home server
 Python web microservice displays a complete control panel in single page design :
 * Complete and rich web interface
